@@ -15,24 +15,24 @@ let resultPublish=(bangla, banglaSecond, english, englishSecond, math, socialSci
         return (`You are missed the exam`)
     }
     else if(gorNumber>33 && gorNumber<=40){
-         return (`Your average number= ${gorNumber} You Get D`);
+         return (`You passed the Examination. Your average number= ${gorNumber} You Get D`);
     
         }else if(gorNumber>40 && gorNumber<=50){
-        return (`Your average number= ${gorNumber} You Get C`);
+        return (`You passed the Examination. Your average number= ${gorNumber} You Get C`);
     
     }else if(gorNumber>50 && gorNumber<=60){
-        return (`Your average number= ${gorNumber} You Get B`)
+        return (`You passed the Examination. Your average number= ${gorNumber} You Get B`)
 
     }else if(gorNumber>60 && gorNumber<=70){
-        return (`Your average number= ${gorNumber} You Get A-`)
+        return (`You passed the Examination. Your average number= ${gorNumber} You Get A-`)
 
     }else if(gorNumber>70 && gorNumber<=79){
-        return (`Your average number= ${gorNumber} You Get A`)
+        return (`You passed the Examination. Your average number= ${gorNumber} You Get A`)
 
     }else if( gorNumber>79 && gorNumber<=89){
-        return (`Your average number= ${gorNumber} You Get A+`)
+        return (`You passed the Examination. Your average number= ${gorNumber} You Get A+`)
     }else if(gorNumber>89 && gorNumber<=100){
-        return (`Your average number= ${gorNumber} You Get Golden A+`)
+        return (`You passed the Examination. Your average number= ${gorNumber} You Get Golden A+`)
 
     }else {
         return (`You are not attend in the examination`)

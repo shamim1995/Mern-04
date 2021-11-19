@@ -1,10 +1,10 @@
 
-let currencyConverter=(euro, convert, )=>{
-let currency=euro;
+let currencyConverter=(currencyName, convert )=>{
+let currency = currencyName;
 let amount=convert;
 
-if (currency == 'Euro' || currency == '£') {
-    let calculation= amount*109;
+if (currency == 'EURO' || currency == '£') {
+    let calculation= amount*100;
     return calculation;
 }else if( currency== 'CAD'){
     let calculation= amount*67;
@@ -12,15 +12,16 @@ if (currency == 'Euro' || currency == '£') {
 }else if(currency=='POUND'){
     let calculation= amount*116;
     return calculation;
-}else if( currency=='USD' || '$'){
+}else if( currency=='USD' || currency== '$'){
     let calculation= amount*82;
     return calculation;
 }else{
-    return(`you have no money `)
+    return(`your Inforamtion wrong `)
+    
 }
 
 }
-console.log(currencyConverter('Euro', 10))
-console.log(currencyConverter('CAD', 10))
+console.log(currencyConverter('EURO',2))
+console.log(currencyConverter('CAD', 2))
 console.log(currencyConverter('POUND', 2))
 console.log(currencyConverter('$', 5))
